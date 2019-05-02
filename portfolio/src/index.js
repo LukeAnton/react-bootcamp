@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+    import React from 'react'; //loads the react library from within the node_modules
+    import ReactDOM from 'react-dom'//same same
+    import { Button } from 'react-toolbox/lib/button';
+    import { AppBar } from 'react-toolbox/lib/app_bar';
+    import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    //render the element to the dom in the div tag... to the document in the root tag
+    ReactDOM.render(
+        //render <App /> from the App component imported above
+        <App />,
+      document.getElementById('root'));
